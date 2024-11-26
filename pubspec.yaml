@@ -35,7 +35,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.example.gcore_flutter
+        package: pl.refericon.gcore_flutter
         pluginClass: GcoreFlutterPlugin
       ios:
         pluginClass: GcoreFlutterPlugin

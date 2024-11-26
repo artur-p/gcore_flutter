@@ -1,4 +1,4 @@
-package com.example.gcore_flutter
+package pl.refericon.gcore_flutter
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
