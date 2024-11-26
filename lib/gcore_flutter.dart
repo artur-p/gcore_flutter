@@ -1,8 +1,7 @@
-
-import 'gcore_flutter_platform_interface.dart';
+import 'package:gcore_flutter/src/gen/gcore_flutter_host.dart';
 
 class GcoreFlutter {
-  Future<String?> getPlatformVersion() {
-    return GcoreFlutterPlatform.instance.getPlatformVersion();
+  GCoreHost getGCoreHost() {
+    return GCoreHost();
   }
 }

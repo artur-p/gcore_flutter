@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
 
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gcore_flutter/gcore_flutter.dart';
 
@@ -19,6 +19,8 @@ class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
   final _gcoreFlutterPlugin = GcoreFlutter();
 
+  // static final _host = InsyliumSecurityPlayIntegrityHost();
+
   @override
   void initState() {
     super.initState();
@@ -32,7 +34,7 @@ class _MyAppState extends State<MyApp> {
     // We also handle the message potentially returning null.
     try {
       platformVersion =
-          await _gcoreFlutterPlugin.getPlatformVersion() ?? 'Unknown platform version';
+          await _gcoreFlutterPlugin.getGCoreHost().getPlatformVersion();
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
